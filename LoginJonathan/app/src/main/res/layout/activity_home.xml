@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".home">
+
+    <TextView
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="SELAMAT DATANG"
+        android:textColor="#FFA500"
+        android:textSize="38dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-38dp"
+        android:text="Toko buah cak Putin menyediakan berbagai buah segar"
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/inventoryButton"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="List Buah" />
+
+    <Button
+        android:id="@+id/btnCamera_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AMBIL FOTO BUAHMU!"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btnCamera_id" />
+</LinearLayout>
